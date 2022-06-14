@@ -1,60 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Amoblamientos Bahía | Nosotros</title>     
-        <link rel="shortcut icon" href="/assets/Logo menu.jpg" type="png">
-        <link rel="stylesheet" href="/style.css"> 
-    </head>
-    <body id="grid_container-nosotros">
-        <header>
-            <h1 class="título__secciones">Nosotros</h1>
-        </header>
-        <nav>
-            <ul class="barra__menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a>
-                    <ul class="barra__submenu">
-                        <li ><a href="#">Cocina</a></li>
-                        <li><a href="#">Dormitorio</a></li>
-                        <li><a href="#">Sala de Estar</a></li>
-                        <li><a href="#">Oficina</a></li>
-                    </ul>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoblamientos Bahía | Nosotros</title>     
+    <link rel="shortcut icon" href="/assets/Logo menu.jpg" type="png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">   
+    <!--<link rel="stylesheet" href="/style.css">-->
+    <link rel="stylesheet" href="/styleboot.css">
+  </head>
+  
+  <body>
+  
+    <header class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/assets/Logo menu.jpg" alt="" width="auto" height="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
-                <li><a href="./galeria.html">Galería</a></li>
-                <li class="hidden"><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/pages/productos.html">Cocina</a></li>
+                    <li><a class="dropdown-item" href="/pages/productos.html">Dormitorio</a></li>
+                    <li><a class="dropdown-item" href="/pages/productos.html">Sala de Estar</a></li>
+                    <li><a class="dropdown-item" href="/pages/productos.html">Oficina</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/pages/productos.html">Servicios</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Explora aquí..." aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
         </nav>
-        <main class="background2 main-nosotros ">
-            <div class="título__secciones">
-                <h2>Concretamos tus ideas</h2>
-            </div>
-            <div>
-                <p class="hidden">
-                    Somos una pequeña empresa radicada en la ciudad de Bahía Blanca.
-                </p>
-                <p>
-                    Realizamos trabajos para la ciudad y zonas aledañas.
-                </p>
-                <p>
-                    Nuestro staff cuenta con la mejor capacitación del mercado.
-                </p>
-            </div>     
-        </main>
-        <aside class=" background3 img__Nosotros">
-            <div class=" aside-nosotros">
-                <a href="/assets/Equipo1.jpeg" class="hidden aside-nosotros"><img src="/assets/Equipo1.jpeg" alt="equipo"></a>
-                <a href="/assets/Equipo1.jpeg" class="hidden aside-nosotros"><img src="/assets/Equipo1.jpeg" alt="equipo1"></a>        
-            </div>
-        </aside>
-        <footer>
-            <ul class="barra__footer">
-                <li><a href="https://www.facebook.com/AmoblamientosBahia-2271492923068992">Facebook</a></li>
-                <li><a href="https://www.instagram.com/amoblamientosbahia/">Instagram</a></li>
-            </ul>
-        </footer>
-    </body>
+        <hr>
+      </div>
+      <div class="row">
+        <h1 class="productos_titulo text-uppercase fs-3">Nosotros</h1>
+      </div>   
+    </header>
+  
+    <main>
+      <div class="container-fluid">
+        <div class="row g-0 bg-light position-relative">
+          <div class="col-md-6 mb-md-0 p-md-4 row justify-content-center">
+            <img src="/assets/Equipo1.jpeg" class="w-50" alt="...">
+          </div>
+          <div class="col-md-6 p-4 ps-md-0">
+            <h5 class="mt-0">Sobre nosotros</h5>
+            <p>Somos una pequeña empresa radicada en la ciudad de Bahía Blanca. Gracias a nuestros clientes seguimos creciendo día a día para brindarles calidad y originalidad a sus espacios junto con el mejor servicio.</p>
+            <p>La zona geográfica no es un límite para nosotros, realizamos trabajos para la ciudad y zonas aledañas.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container-fluid">
+        <div class="row g-0 bg-light position-relative">
+          <div class="col-md-4 p-4 ps-md-0">
+            <h5 class="mt-0">Staff</h5>
+            <p>Nuestro staff cuenta con la mejor capacitación y experiencia del mercado. Trabajamos de manera colaborativa y multidisciplinaria. Estamos en todos los detalles.</p>
+            <p>¡Nos encanta formar parte de este equipo!</p>
+          </div>
+          <div class="col-md-6 mb-md-0 p-md-4 row justify-content-end">
+            <img src="/assets/Equipo1.jpeg" class="w-50" alt="...">
+          </div>
+        </div>
+      </div>
+    </main>
+  
+    <footer>
+      <ul class="bg-light nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-current="page" href="https://www.facebook.com/AmoblamientosBahia-2271492923068992">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="https://www.instagram.com/amoblamientosbahia/">Instagram</a>
+        </li>
+      </ul>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+  
 </html>

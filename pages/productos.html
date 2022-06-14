@@ -1,77 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Amoblamientos Bahía | Productos</title>   
-        <link rel="shortcut icon" href="/assets/Logo menu.jpg" type="png">
-        <link rel="stylesheet" href="/style.css">   
-    </head>
-    <body id="body__productos">
-        <header>
-            <h1 class="título__secciones">Productos</h1>
-        </header>
-        <nav>
-            <ul class="barra__menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li class="hidden"><a href="./productos.html">Productos</a>
-                    <ul class="barra__submenu">
-                        <li ><a href="#">Cocina</a></li>
-                        <li><a href="#">Dormitorio</a></li>
-                        <li><a href="#">Sala de Estar</a></li>
-                        <li><a href="#">Oficina</a></li>
-                    </ul>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoblamientos Bahía | Productos</title>   
+    <link rel="shortcut icon" href="/assets/Logo menu.jpg" type="png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">   
+    <!--<link rel="stylesheet" href="/style.css">-->
+    <link rel="stylesheet" href="/styleboot.css">
+  </head>
+  
+  <body>
+  
+    <header class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/assets/Logo menu.jpg" alt="" width="auto" height="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
-                <li><a href="./galeria.html">Galería</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/pages/productos.html">Cocina</a></li>
+                    <li><a class="dropdown-item" href="/pages/productos.html">Dormitorio</a></li>
+                    <li><a class="dropdown-item" href="/pages/productos.html">Sala de Estar</a></li>
+                    <li><a class="dropdown-item" href="/pages/productos.html">Oficina</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/pages/productos.html">Servicios</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Explora aquí..." aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
         </nav>
-        <main class="img__Productos background">
-            <div class="grilla__productos título__secciones">
-                <section class="section1">
-                    <h3>Cocina</h3>
-                    <img src="/assets/Cocina - AB.jpeg" alt="Cocina">
-                    <article>Bajomesada</article>
-                    <article>Alacena</article>
-                </section>
-                <section class="section2">
-                    <h3>Dormitorio</h3>
-                    <img src="/assets/Dormitorio - AB.jpeg" alt="Dormitorio">
-                    <article>Mesa de luz</article>
-                    <article>Placard</article>
-                </section>
-                <section class="section3">
-                    <h3>Sala de estar</h3>
-                    <img src="/assets/Living - AB.jpeg" alt="Living">
-                    <article>Rack TV</article>
-                    <article>Mesa ratona</article>
-                </section>
-                <section class="section4">
-                    <h3>Oficina</h3>
-                    <img src="/assets/Oficina - AB.jpeg" alt="Oficina">
-                    <article>Escritorio</article>
-                    <article>Cajonera</article>
-                </section>
+        <hr>
+      </div>
+      <div class="row">
+        <h1 class="productos_titulo text-uppercase fs-3">Productos</h1>
+      </div>   
+    </header>  
+  
+    <main>
+      <section>
+        <div class="container-fluid">
+          <div class="row g-2 p-2">
+            <div class="col-sm-12 col-md-6 col-xl-6">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="row g-2">
+                    <img src="/assets/Cocina - AB.jpeg" alt="..." class="">
+                  </div>
+                  <div class="row g-2">
+                    <div class="card-body">
+                      <h5 class="card-title">Muebles de Cocina</h5>
+                      <p class="card-text">Practicidad y funcionalidad de todos tus espacios.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Bajomesadas</li>
+                      <li class="list-group-item">Alacenas</li>
+                      <li class="list-group-item">Y mucho más</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="título__secciones">
-                <h2 class="hidden">Servicios</h2>
-                <section class="grilla__servicios hidden">
-                    <article class="article1">Mantenimientos</article>
-                    <article class="article2">Garantías</article>
-                    <article class="article3">Colocaciones</article>
-                </section>
+            <div class="col-sm-12 col-md-6 col-xl-6">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="row g-2">
+                    <img src="/assets/Dormitorio - AB.jpeg" alt="..." class="">
+                  </div>
+                  <div class="row g-2">
+                    <div class="card-body">
+                      <h5 class="card-title">Muebles de Dormitorio</h5>
+                      <p class="card-text">Optimizamos tus espacios.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Placards</li>
+                      <li class="list-group-item">Mesas de luz</li>
+                      <li class="list-group-item">Y mucho más</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-        </main>
-        <aside class="publicidad-productos">
-            PUBLICIDAD a modo ilustrativo
-        </aside>
-        <footer>
-            <ul class="barra__footer">
-                <li><a href="https://www.facebook.com/AmoblamientosBahia-2271492923068992">Facebook</a></li>
-                <li><a href="https://www.instagram.com/amoblamientosbahia/">Instagram</a></li>
-            </ul>
-        </footer>
-    </body>
+          </div>
+  
+          <div class="row g-2 p-2">
+            <div class="col-sm-12 col-md-6 col-xl-6">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="row g-2">
+                    <img src="/assets/Living - AB.jpeg" alt="..." class="">
+                  </div>
+                  <div class="row g-2">
+                    <div class="card-body">
+                      <h5 class="card-title">Muebles de Estar</h5>
+                      <p class="card-text">Personalizamos tu lugar de confort.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Racks de TV</li>
+                      <li class="list-group-item">Muebles de Almacenamiento</li>
+                      <li class="list-group-item">Y mucho más</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-6">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="row g-2">
+                    <img src="/assets/Oficina - AB.jpeg" alt="..." class="">
+                  </div>
+                  <div class="row g-2">
+                    <div class="card-body">
+                      <h5 class="card-title">Muebles de Oficina</h5>
+                      <p class="card-text">Renovamos tu oficina.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Escritorios</li>
+                      <li class="list-group-item">Cajoneras</li>
+                      <li class="list-group-item">Y mucho más</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>             
+        </div>
+      </section>
+      <hr>
+      <section>
+        <div class="container-fluid">
+          <h2>Servicios</h2>
+          <div class="list-group list-group-horizontal-sm">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Colocaciones</h5>
+              </div>
+              <p class="mb-1">Todos nuestros trabajos incluyen colocación.</p>
+              <small class="text-muted">¡ Consultanos por otras colocaciones !</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Mantenimiento</h5>
+              </div>
+              <p class="mb-1">Realizamos mantenimiento de todos nuestros trabajos.</p>
+              <small class="text-muted">¡ Consultanos por otros mantenimientos !</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Garantía</h5>
+              </div>
+              <p class="mb-1">Todos nuestro trabajos cuentan con la mejor garantía.</p>
+              <small class="text-muted">¡ Consultanos por nuestros tipos de garantía !</small>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <footer>
+      <ul class="bg-light nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-current="page" href="https://www.facebook.com/AmoblamientosBahia-2271492923068992">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="https://www.instagram.com/amoblamientosbahia/">Instagram</a>
+        </li>
+      </ul>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+  
 </html>
