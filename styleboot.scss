@@ -10,6 +10,13 @@ li {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
 }
+
+li {
+    background-color:none;
+        &:hover{
+            background-color:$colorCuaternario
+        }
+}   
   
 .grad {
     background-image: -webkit-gradient(linear, left top, left bottom, from($colorTerciario), to($colorCuaternario));

@@ -9,6 +9,14 @@ li {
   font-family: 'Quicksand', sans-serif;
 }
 
+li {
+  background-color: none;
+}
+
+li:hover {
+  background-color: #05DBCC;
+}
+
 .grad {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFF), to(#05DBCC));
 }
